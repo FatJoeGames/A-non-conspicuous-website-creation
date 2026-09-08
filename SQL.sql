@@ -3,7 +3,7 @@ CREATE DATABASE IF NOT EXISTS ht_db_sec;
 USE ht_db_sec;
 
 CREATE USER IF NOT EXISTS 'ht_db_usr'@'127.0.0.1' IDENTIFIED BY 'ht_db_usr2026!';
-GRANT ALL PRIVILEGES ON ht_db_sec.* TO 'zoneup_user'@'127.0.0.1';
+GRANT ALL PRIVILEGES ON ht_db_sec.* TO 'ht_db_usr'@'127.0.0.1';
 FLUSH PRIVILEGES;
 
 CREATE TABLE users (
